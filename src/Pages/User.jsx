@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react";
+import { useSelector } from "react-redux";
 
-function user() {
-  return (
-    <div>user</div>
-  )
+function Users() {
+  const users = useSelector((state) => state.usersInfo.users);
+
+  return <div>user</div>;
 }
 
-export default user
+export default user;
