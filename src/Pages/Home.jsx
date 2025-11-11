@@ -13,19 +13,19 @@ function Home() {
       <form>
         <label>Name</label>
         <br />
-        <input type="text" />
+        <input type="text" value={inputForm.name} />
         <br />
         <label>Contact</label>
         <br />
-        <input type="number" />
+        <input type="number"  value={inputForm.contact} />
         <br />
         <label>Age</label>
         <br />
-        <input type="number" />
+        <input type="number"  value={inputForm.age}/>
         <br />
         <label>Email</label>
         <br />
-        <input type="text" />
+        <input type="text"  value={inputForm.email}/>
         <br />
         <button>Add</button>
       </form>
