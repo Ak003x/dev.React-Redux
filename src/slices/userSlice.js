@@ -4,7 +4,7 @@ const initialState = {
     users: [],
 }
 
-export const userSlice = userSlice({
+export const userSlice = createSlice({
     name: "Akash",                                                                           //! unique name            
     initialState,                                                                           //! initial state
     reducers: {                                                                            //! reducers function
@@ -12,7 +12,7 @@ export const userSlice = userSlice({
             state.users = [...state.users, action.payload]
         },
         deleteUser: (state, action) => {
-            state.user = state.users.filter((user, index) => index !== action.payload)           //!another reducers function
+            state.users = state.users.filter((user, index) => index !== action.payload)           //!another reducers function
         }
 
 
@@ -26,6 +26,6 @@ export const userSlice = userSlice({
 
 })
 
-export const { setUser, deleteUser } = userSlice.action
+export const { setUser, deleteUser } = userSlice.actions
 
-export default userSlice.reducers;
+export default userSlice.reducer;
