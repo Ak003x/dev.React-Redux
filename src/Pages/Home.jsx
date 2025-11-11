@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Home() {
+  const [inputForm, setFormInput] = useState({
+    name: "",
+    age: "",
+    email: "",
+    contact: "",
+  });
+
   return (
     <div>
       <form>
