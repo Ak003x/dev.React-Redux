@@ -17,15 +17,15 @@ function Home() {
         <br />
         <label>Contact</label>
         <br />
-        <input type="number"  value={inputForm.contact} />
+        <input type="number" value={inputForm.contact} />
         <br />
         <label>Age</label>
         <br />
-        <input type="number"  value={inputForm.age}/>
+        <input type="number" value={inputForm.age} />
         <br />
         <label>Email</label>
         <br />
-        <input type="text"  value={inputForm.email}/>
+        <input type="text" value={inputForm.email} />
         <br />
         <button>Add</button>
       </form>
