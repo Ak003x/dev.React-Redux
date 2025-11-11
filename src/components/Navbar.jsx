@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <nav>
-      <h1>Akash</h1>
+      <h1>Redux</h1>
       <ul>
         <ul>
           <li>

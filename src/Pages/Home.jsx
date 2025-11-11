@@ -9,8 +9,18 @@ function Home() {
   });
 
   const handleState = (event) => {
-    console.log(event.target.value);
+    const { name, value } = event.target;
+
+    setFormInput((currValue) => {
+      return { ...currValue, 
+        [name]: value,
+      
+      };
+    });
   };
+
+
+  console.log(inputForm);
 
   return (
     <div>
@@ -23,15 +33,7 @@ function Home() {
           value={inputForm.name}
           onChange={handleState}
         />
-        <br />
-        <label>Contact</label>
-        <br />
-        <input
-          name="contact"
-          type="number"
-          value={inputForm.contact}
-          onChange={handleState}
-        />
+
         <br />
         <label>Age</label>
         <br />
@@ -48,6 +50,16 @@ function Home() {
           name="email"
           type="text"
           value={inputForm.email}
+          onChange={handleState}
+        />
+        <br />
+
+        <label>Contact</label>
+        <br />
+        <input
+          name="contact"
+          type="number"
+          value={inputForm.contact}
           onChange={handleState}
         />
         <br />
