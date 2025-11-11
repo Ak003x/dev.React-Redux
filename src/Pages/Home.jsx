@@ -8,9 +8,8 @@ function Home() {
     contact: "",
   });
 
-  
   const handleState = (event) => {
-
+    console.log(event.target.value);
   };
 
   return (
@@ -18,19 +17,39 @@ function Home() {
       <form>
         <label>Name</label>
         <br />
-        <input type="text" value={inputForm.name} onChange={handleState} />
+        <input
+          name="name"
+          type="text"
+          value={inputForm.name}
+          onChange={handleState}
+        />
         <br />
         <label>Contact</label>
         <br />
-        <input type="number" value={inputForm.contact} onChange={handleState} />
+        <input
+          name="contact"
+          type="number"
+          value={inputForm.contact}
+          onChange={handleState}
+        />
         <br />
         <label>Age</label>
         <br />
-        <input type="number" value={inputForm.age} onChange={handleState}/>
+        <input
+          name="age"
+          type="number"
+          value={inputForm.age}
+          onChange={handleState}
+        />
         <br />
         <label>Email</label>
         <br />
-        <input type="text" value={inputForm.email} onChange={handleState} />
+        <input
+          name="email"
+          type="text"
+          value={inputForm.email}
+          onChange={handleState}
+        />
         <br />
         <button>Add</button>
       </form>
